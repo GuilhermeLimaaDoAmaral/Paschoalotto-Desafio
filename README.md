@@ -24,6 +24,7 @@ Implementação básica em JavaScript para geração, cadastro, edição e exclu
 
 Observações:
 Recomendado instalar Node.js para testar o frontend utilizando npm.
+Desenvolvido com .NET Core 8.0.
 
 Integração com banco de dados relacional (PostgreSQL): Feito. Foi criada uma entidade "User" para armazenar apenas o nome de usuário, e-mail e senha da API Random Generator. 
 Em termos simples, essa API pública é chamada para gerar aleatoriamente e-mail, senha e nome de usuário.
