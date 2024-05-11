@@ -6,6 +6,10 @@ import Box from '@mui/material/Box';
 import UserTable from './Componet/UserTable';
 import Card from './Componet/Card';
 import TablePagination from '@mui/material/TablePagination';
+import IconButton from '@mui/material/IconButton';
+import SaveIcon from '@mui/icons-material/Save';
+import RefreshIcon from '@mui/icons-material/Refresh';
+import ButtonAppBar from './Componet/ButtonAppBar'
 
 function App() {
   const [userData, setUserData] = useState(null);
@@ -103,35 +107,31 @@ function App() {
 
   return (
     <div className="App">
+      <ButtonAppBar userName={userData ? userData.username : ''} />
         <header className="App-header">
         {!userData && (
           <img src={logo} className="App-logo" alt="logo" />  
         )}      
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
         {!userData && (
-          <Button  variant="contained" sx={{ marginRight: 1 }} onClick={gerarUsuario}>
+          <Button variant="contained" startIcon={<RefreshIcon />} sx={{ marginRight: 1 }} onClick={gerarUsuario}>
             Gerar Usuário
           </Button>
         )}
           {userData && (
         <div  style={{ marginTop: '10px' }}>
            <Card
-          title="Gerador de usuarios"
-          word= {userData.username}
-          definition={userData.email}
-          example= {userData.password}
-        />
-          <div style={{ marginTop: '10px' }}> 
-            <Button variant="contained" onClick={salvarUsuario}>
-              Salvar Usuário
+            word= {userData.username}
+            definition={userData.email}
+            example= {userData.password}
+          />
+        <div style={{ marginTop: '10px' }}> 
+            <Button sx={{ marginRight: '5px' }} variant="contained" startIcon={<SaveIcon />} onClick={salvarUsuario}>
             </Button>
-          </div>
-          <div style={{ marginTop: '10px' }}> 
-            <Button variant="contained" onClick={gerarUsuario}>
-              Gerar Outro Usuário
+            <Button sx={{ marginRight: '200px' }} variant="contained" startIcon={<RefreshIcon />} onClick={gerarUsuario}>
             </Button>
+          </div>      
           </div>
-        </div>
       )}
         </Box>
         <UserTable userList={userList} page={page} rowsPerPage={rowsPerPage} onUpdateUserList={handleUpdateUserList}/>

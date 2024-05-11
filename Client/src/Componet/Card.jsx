@@ -6,35 +6,29 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-
-
-export default function OutlinedCard({ title, word, definition, example }) {
+export default function OutlinedCard({word, definition, example }) {
   const handleLearnMore = () => {
     window.location.href = 'https://randomuser.me/';
   };
 
   return (
     <Box sx={{ minWidth: 275 }}>
-      <Card variant="outlined">
-      <CardContent style={{ backgroundColor: '#2c2e31', color: 'white' }}>
-          <Typography sx={{ fontSize: 10, textAlign: 'center', color: 'white' }} gutterBottom>
-            <h1>
-              RANDOM USER GENERATOR
-            </h1>
-            <p>A free, open-source API for generating random user data. Like Lorem Ipsum, but for people.</p>
+      <Card variant="outlined" sx={{ backgroundColor: '#f0f0f0', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)', borderRadius: '8px' }}>
+        <CardContent>
+          <Typography variant="h5" component="div" sx={{ textAlign: 'center', marginBottom: '16px' }}>
+            Informações do Usuário
+          </Typography>
+          <Typography variant="body1" sx={{ marginBottom: '8px' }}>
+            <strong>Email:</strong> {definition}
+          </Typography>
+          <Typography variant="body1" sx={{ marginBottom: '8px' }}>
+            <strong>Nome:</strong> {word}
+          </Typography>
+          <Typography variant="body1" sx={{ marginBottom: '16px' }}>
+            <strong>Senha:</strong> {example}
           </Typography>
         </CardContent>
-        <CardContent>
-          <Typography variant="h5" component="div" style={{ textAlign: 'center' }}>
-            Email: {definition}
-            <br />
-            Nome: {title}
-            <br />
-            Senha: {word}
-          </Typography>        
-        </CardContent>
         <CardActions style={{ justifyContent: 'center' }}>
-          <Button size="small" onClick={handleLearnMore}>Saiba mais</Button>
         </CardActions>
       </Card>
     </Box>

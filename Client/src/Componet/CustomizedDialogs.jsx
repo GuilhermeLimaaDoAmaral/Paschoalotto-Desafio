@@ -63,7 +63,7 @@ export default function CustomizedDialogs({ openDialog, idUser }) {
         open={open}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-          User Details
+          Detalhes do usuário
         </DialogTitle>
         <IconButton
           aria-label="close"

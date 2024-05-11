@@ -147,7 +147,7 @@ const UserTable = ({ userList, page, rowsPerPage, onUpdateUserList}) => {
 
   return (
     <div>
-      <TextField
+   <TextField
         label="Filtrar por nome"
         value={filterName}
         onChange={(e) => setFilterName(e.target.value)}
@@ -155,9 +155,14 @@ const UserTable = ({ userList, page, rowsPerPage, onUpdateUserList}) => {
         variant="outlined"
         margin="normal"
         color="primary"
-        
+        InputLabelProps={{
+          style: { color: 'white' } // define a cor do rótulo para branco
+        }}
+        InputProps={{
+          style: { color: 'white', backgroundColor: 'rgba(255, 255, 255, 0.1)', width: '100%' ,marginRight: '580px' } // define a cor do texto e o fundo para branco
+        }}     
       />
-      <TableContainer component={Paper} sx={{ width: '100%', margin: 'auto', marginTop: '30px', maxHeight: '400px', overflowY: 'auto' }}>
+      <TableContainer component={Paper} sx={{ width: '100%', margin: 'auto', maxHeight: '400px', overflowY: 'auto' }}>
         <Table sx={{ minWidth: 700 }} aria-label="customized table">
           <TableHead>
             <TableRow>
@@ -194,7 +199,7 @@ const UserTable = ({ userList, page, rowsPerPage, onUpdateUserList}) => {
         open={dialogOpen}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-          User Details
+          Detalhes do Usuário
         </DialogTitle>
         <IconButton
           aria-label="close"
