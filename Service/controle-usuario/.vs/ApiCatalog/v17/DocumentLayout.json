@@ -1,0 +1,189 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Api\\Catalogo-de-Api\\MyAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{128AE60B-1A4C-482A-8E70-BEA16C86ADE6}|MyApi\\ApiCatalog.csproj|d:\\api\\catalogo-de-api\\myapi\\myapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128AE60B-1A4C-482A-8E70-BEA16C86ADE6}|MyApi\\ApiCatalog.csproj|solutionrelative:myapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4BF7FBC-7D08-43C4-9551-FAC4EB52BDE1}|Api.Catalog\\ApiCatalog.Core.csproj|d:\\api\\catalogo-de-api\\myapi\\api.catalog\\dtos\\request\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4BF7FBC-7D08-43C4-9551-FAC4EB52BDE1}|Api.Catalog\\ApiCatalog.Core.csproj|solutionrelative:api.catalog\\dtos\\request\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFF0791-6DEE-4BDE-A66E-5B6F38D82C3A}|ApiCatlog.Persistence\\ApiCatalog.Persistence.csproj|d:\\api\\catalogo-de-api\\myapi\\apicatlog.persistence\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFF0791-6DEE-4BDE-A66E-5B6F38D82C3A}|ApiCatlog.Persistence\\ApiCatalog.Persistence.csproj|solutionrelative:apicatlog.persistence\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4BF7FBC-7D08-43C4-9551-FAC4EB52BDE1}|Api.Catalog\\ApiCatalog.Core.csproj|d:\\api\\catalogo-de-api\\myapi\\api.catalog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4BF7FBC-7D08-43C4-9551-FAC4EB52BDE1}|Api.Catalog\\ApiCatalog.Core.csproj|solutionrelative:api.catalog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AE60B-1A4C-482A-8E70-BEA16C86ADE6}|MyApi\\ApiCatalog.csproj|d:\\api\\catalogo-de-api\\myapi\\myapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128AE60B-1A4C-482A-8E70-BEA16C86ADE6}|MyApi\\ApiCatalog.csproj|solutionrelative:myapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AE60B-1A4C-482A-8E70-BEA16C86ADE6}|MyApi\\ApiCatalog.csproj|d:\\api\\catalogo-de-api\\myapi\\myapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{128AE60B-1A4C-482A-8E70-BEA16C86ADE6}|MyApi\\ApiCatalog.csproj|solutionrelative:myapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1242556-A512-475A-B872-789E719AF3C5}|ApiCatalog.Utils\\ApiCatalog.Utils.csproj|d:\\api\\catalogo-de-api\\myapi\\apicatalog.utils\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1242556-A512-475A-B872-789E719AF3C5}|ApiCatalog.Utils\\ApiCatalog.Utils.csproj|solutionrelative:apicatalog.utils\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4BF7FBC-7D08-43C4-9551-FAC4EB52BDE1}|Api.Catalog\\ApiCatalog.Core.csproj|d:\\api\\catalogo-de-api\\myapi\\api.catalog\\apicatalog.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F4BF7FBC-7D08-43C4-9551-FAC4EB52BDE1}|Api.Catalog\\ApiCatalog.Core.csproj|solutionrelative:api.catalog\\apicatalog.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AE60B-1A4C-482A-8E70-BEA16C86ADE6}|MyApi\\ApiCatalog.csproj|d:\\api\\catalogo-de-api\\myapi\\myapi\\apicatalog.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{128AE60B-1A4C-482A-8E70-BEA16C86ADE6}|MyApi\\ApiCatalog.csproj|solutionrelative:myapi\\apicatalog.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Api\\Catalogo-de-Api\\MyAPI\\MyApi\\Program.cs",
+              "RelativeDocumentMoniker": "MyApi\\Program.cs",
+              "ToolTip": "D:\\Api\\Catalogo-de-Api\\MyAPI\\MyApi\\Program.cs",
+              "RelativeToolTip": "MyApi\\Program.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAUwDwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T20:16:12.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Api\\Catalogo-de-Api\\MyAPI\\MyApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "MyApi\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Api\\Catalogo-de-Api\\MyAPI\\MyApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "MyApi\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAUwH0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T18:24:01.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "D:\\Api\\Catalogo-de-Api\\MyAPI\\ApiCatlog.Persistence\\Repository\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "ApiCatlog.Persistence\\Repository\\BaseRepository.cs",
+              "ToolTip": "D:\\Api\\Catalogo-de-Api\\MyAPI\\ApiCatlog.Persistence\\Repository\\BaseRepository.cs",
+              "RelativeToolTip": "ApiCatlog.Persistence\\Repository\\BaseRepository.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T18:19:21.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRequestDTO.cs",
+              "DocumentMoniker": "D:\\Api\\Catalogo-de-Api\\MyAPI\\Api.Catalog\\DTOs\\Request\\UserRequestDTO.cs",
+              "RelativeDocumentMoniker": "Api.Catalog\\DTOs\\Request\\UserRequestDTO.cs",
+              "ToolTip": "D:\\Api\\Catalogo-de-Api\\MyAPI\\Api.Catalog\\DTOs\\Request\\UserRequestDTO.cs",
+              "RelativeToolTip": "Api.Catalog\\DTOs\\Request\\UserRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T18:19:52.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Api\\Catalogo-de-Api\\MyAPI\\MyApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MyApi\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Api\\Catalogo-de-Api\\MyAPI\\MyApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MyApi\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-10T20:23:36.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Api\\Catalogo-de-Api\\MyAPI\\ApiCatalog.Utils\\Program.cs",
+              "RelativeDocumentMoniker": "ApiCatalog.Utils\\Program.cs",
+              "ToolTip": "D:\\Api\\Catalogo-de-Api\\MyAPI\\ApiCatalog.Utils\\Program.cs",
+              "RelativeToolTip": "ApiCatalog.Utils\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T20:24:09.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Api\\Catalogo-de-Api\\MyAPI\\Api.Catalog\\Program.cs",
+              "RelativeDocumentMoniker": "Api.Catalog\\Program.cs",
+              "ToolTip": "D:\\Api\\Catalogo-de-Api\\MyAPI\\Api.Catalog\\Program.cs",
+              "RelativeToolTip": "Api.Catalog\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T20:38:12.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApiCatalog.Core",
+              "DocumentMoniker": "D:\\Api\\Catalogo-de-Api\\MyAPI\\Api.Catalog\\ApiCatalog.Core.csproj",
+              "RelativeDocumentMoniker": "Api.Catalog\\ApiCatalog.Core.csproj",
+              "ToolTip": "D:\\Api\\Catalogo-de-Api\\MyAPI\\Api.Catalog\\ApiCatalog.Core.csproj",
+              "RelativeToolTip": "Api.Catalog\\ApiCatalog.Core.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-10T19:44:15.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApiCatalog",
+              "DocumentMoniker": "D:\\Api\\Catalogo-de-Api\\MyAPI\\MyApi\\ApiCatalog.csproj",
+              "RelativeDocumentMoniker": "MyApi\\ApiCatalog.csproj",
+              "ToolTip": "D:\\Api\\Catalogo-de-Api\\MyAPI\\MyApi\\ApiCatalog.csproj",
+              "RelativeToolTip": "MyApi\\ApiCatalog.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-10T18:50:29.666Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
