@@ -6,10 +6,15 @@ Backend:
 
 Desenvolvimento de CRUD com 7 endpoints, testáveis via Swagger.
 Utilização da arquitetura hexagonal dividida em 4 projetos:
+
 API: Concentra os endpoints.
+
 Core: Entidades e regras de negócio.
+
 Persistence: Camada de dados com Entity Framework (Code First).
+
 Utilities: Utilidades diversas.
+
 Herança para um desenvolvimento limpo, evitando repetição de código.
 Implementação de paginação para melhor desempenho.
 
