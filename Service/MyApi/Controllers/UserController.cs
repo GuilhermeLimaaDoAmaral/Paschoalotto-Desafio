@@ -1,14 +1,14 @@
-﻿using ApiCatalog.Core.DTOs.Request;
-using ApiCatalog.Core.DTOs.Response;
-using ApiCatalog.Core.Entities;
-using ApiCatalog.Core.Interfaces.Repository;
-using ApiCatalog.Core.Pagination;
-using ApiCatalog.ResponseBuilder;
-using ApiCatalog.Utils;
+﻿using ApiCatalog.ResponseBuilder;
 using AutoMapper;
+using Core.DTOs.Request;
+using Core.DTOs.Response;
+using Core.Entities;
+using Core.Interfaces.Repository;
+using Core.Pagination;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using Utils;
 
 namespace ApiCatalog.Controllers
 {

@@ -1,24 +1,17 @@
-
-using ApiCatalog.Core.DTOs.Automapper;
-using ApiCatalog.Core.Entities;
-using ApiCatalog.Core.Interfaces.Repository;
 using ApiCatalog.Extensions;
 using ApiCatalog.Fillters;
-using ApiCatalog.Persistence.Context;
-using ApiCatalog.Persistence.Repository;
+using Core.DTOs.Automapper;
+using Core.Interfaces.Repository;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Diagnostics;
+using Persistence.Context;
+using Persistence.Repository;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//Inject
-
 //Repository
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-// Add services to the container.
 
 //Filtro de exeção não tratado
 builder.Services.AddControllers(options =>

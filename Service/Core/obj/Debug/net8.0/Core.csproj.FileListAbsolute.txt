@@ -1,0 +1,13 @@
+D:\Teste2\Paschoalotto-Desafio\Service\Core\bin\Debug\net8.0\Core.deps.json
+D:\Teste2\Paschoalotto-Desafio\Service\Core\bin\Debug\net8.0\Core.dll
+D:\Teste2\Paschoalotto-Desafio\Service\Core\bin\Debug\net8.0\Core.pdb
+D:\Teste2\Paschoalotto-Desafio\Service\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+D:\Teste2\Paschoalotto-Desafio\Service\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Teste2\Paschoalotto-Desafio\Service\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+D:\Teste2\Paschoalotto-Desafio\Service\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+D:\Teste2\Paschoalotto-Desafio\Service\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+D:\Teste2\Paschoalotto-Desafio\Service\Core\obj\Debug\net8.0\Core.sourcelink.json
+D:\Teste2\Paschoalotto-Desafio\Service\Core\obj\Debug\net8.0\Core.dll
+D:\Teste2\Paschoalotto-Desafio\Service\Core\obj\Debug\net8.0\refint\Core.dll
+D:\Teste2\Paschoalotto-Desafio\Service\Core\obj\Debug\net8.0\Core.pdb
+D:\Teste2\Paschoalotto-Desafio\Service\Core\obj\Debug\net8.0\ref\Core.dll

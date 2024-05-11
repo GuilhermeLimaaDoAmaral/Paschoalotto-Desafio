@@ -1,0 +1,12 @@
+D:\Teste2\Paschoalotto-Desafio\Service\Ultils\bin\Debug\net8.0\Ultils.deps.json
+D:\Teste2\Paschoalotto-Desafio\Service\Ultils\bin\Debug\net8.0\Ultils.dll
+D:\Teste2\Paschoalotto-Desafio\Service\Ultils\bin\Debug\net8.0\Ultils.pdb
+D:\Teste2\Paschoalotto-Desafio\Service\Ultils\obj\Debug\net8.0\Ultils.GeneratedMSBuildEditorConfig.editorconfig
+D:\Teste2\Paschoalotto-Desafio\Service\Ultils\obj\Debug\net8.0\Ultils.AssemblyInfoInputs.cache
+D:\Teste2\Paschoalotto-Desafio\Service\Ultils\obj\Debug\net8.0\Ultils.AssemblyInfo.cs
+D:\Teste2\Paschoalotto-Desafio\Service\Ultils\obj\Debug\net8.0\Ultils.csproj.CoreCompileInputs.cache
+D:\Teste2\Paschoalotto-Desafio\Service\Ultils\obj\Debug\net8.0\Ultils.sourcelink.json
+D:\Teste2\Paschoalotto-Desafio\Service\Ultils\obj\Debug\net8.0\Ultils.dll
+D:\Teste2\Paschoalotto-Desafio\Service\Ultils\obj\Debug\net8.0\refint\Ultils.dll
+D:\Teste2\Paschoalotto-Desafio\Service\Ultils\obj\Debug\net8.0\Ultils.pdb
+D:\Teste2\Paschoalotto-Desafio\Service\Ultils\obj\Debug\net8.0\ref\Ultils.dll

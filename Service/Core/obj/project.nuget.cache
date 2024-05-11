@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XuyhcT5kluBCoIMioXGZNL39M+81fJxKC8D/1qmaQ55w1tyYKOWrZy9e+zr9Kgx5dSuWMVU5Ucd3pU2o8E4LaA==",
+  "success": true,
+  "projectFilePath": "D:\\Teste2\\Paschoalotto-Desafio\\Service\\Core\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GuilhermeAmaral\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\GuilhermeAmaral\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

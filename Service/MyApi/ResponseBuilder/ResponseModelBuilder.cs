@@ -1,5 +1,4 @@
-﻿using ApiCatalog.Utils;
-using Microsoft.OpenApi.Extensions;
+﻿using Utils;
 
 namespace ApiCatalog.ResponseBuilder
 {

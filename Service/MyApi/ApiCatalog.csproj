@@ -22,7 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ApiCatlog.Persistence\ApiCatalog.Persistence.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\Persistence\Persistence.csproj" />
+    <ProjectReference Include="..\Ultils\Ultils.csproj" />
   </ItemGroup>
 
 </Project>
