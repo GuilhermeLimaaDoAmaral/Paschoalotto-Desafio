@@ -6,33 +6,32 @@ import Box from '@mui/material/Box';
 import UserTable from './Componet/UserTable';
 import Card from './Componet/Card';
 import TablePagination from '@mui/material/TablePagination';
-import IconButton from '@mui/material/IconButton';
 import SaveIcon from '@mui/icons-material/Save';
 import RefreshIcon from '@mui/icons-material/Refresh';
-import ButtonAppBar from './Componet/ButtonAppBar'
+import ButtonAppBar from './Componet/ButtonAppBar';
 
 function App() {
   const [userData, setUserData] = useState(null);
   const [userList, setUserList] = useState([]);
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
-  const [newRowsPerPage, setNewRowsPerPage] = useState(5);
+  const [refreshing, setRefreshing] = useState(false);
   const handleUpdateUserList = (updatedUserList) => {
     setUserList(updatedUserList);
   };
-
+  
   useEffect(() => {
-    handleGetUserApi(page + 1,rowsPerPage);
+    handleGetUserApi(page + 1, rowsPerPage);
   }, []);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
-    handleGetUserApi(newPage + 1, rowsPerPage); // Adiciona 1 porque as páginas começam do 1
+    handleGetUserApi(newPage + 1, rowsPerPage);
   };
-  
+
   const handleChangeRowsPerPage = (event) => {
     const newRowsPerPage = parseInt(event.target.value, 10);
-    if (newRowsPerPage !== rowsPerPage) { // Verifica se o novo valor é diferente do valor atual
+    if (newRowsPerPage !== rowsPerPage) {
       setPage(0);
       setRowsPerPage(newRowsPerPage);
       const currentPage = Math.ceil((page + 1) / newRowsPerPage);
@@ -43,18 +42,18 @@ function App() {
         handleGetUserApi(currentPage, newRowsPerPage);
       }
     }
-  }; 
-  
+  };
+
   const handleGetUserApi = async (pageNumber, pageSize) => {
     try {
       const response = await fetch(`https://localhost:7076/api/v1/User/pagination?PageNumber=${pageNumber}&PageSize=${pageSize}`);
-  
+
       if (!response.ok) {
         throw new Error(`Erro HTTP: ${response.status}`);
       }
-  
+
       const data = await response.json();
-      
+
       setUserList(data.data);
     } catch (error) {
       alert(error);
@@ -62,6 +61,8 @@ function App() {
   };
 
   const gerarUsuario = () => {
+    setRefreshing(true);
+
     fetch("https://randomuser.me/api/")
       .then(response => response.json())
       .then(data => {
@@ -71,8 +72,15 @@ function App() {
           username: user.login.username,
           password: user.login.password
         });
+
+        setTimeout(() => {
+          setRefreshing(false);
+        }, 1000);
       })
-      .catch(error => console.error("Erro ao buscar usuário:", error));
+      .catch(error => {
+        console.error("Erro ao buscar usuário:", error);
+        setRefreshing(false);
+      });
   };
 
   const salvarUsuario = async () => {
@@ -98,7 +106,7 @@ function App() {
 
       console.log("Usuário salvo com sucesso!");
       gerarUsuario();
-      handleGetUserApi(1, rowsPerPage); 
+      handleGetUserApi(1, rowsPerPage);
 
     } catch (error) {
       console.error("Erro ao salvar usuário:", error);
@@ -108,43 +116,64 @@ function App() {
   return (
     <div className="App">
       <ButtonAppBar userName={userData ? userData.username : ''} />
-        <header className="App-header">
-        {!userData && (
-          <img src={logo} className="App-logo" alt="logo" />  
-        )}      
-        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-        {!userData && (
-          <Button variant="contained" startIcon={<RefreshIcon />} sx={{ marginRight: 1 }} onClick={gerarUsuario}>
-            Gerar Usuário
-          </Button>
-        )}
-          {userData && (
-        <div  style={{ marginTop: '10px' }}>
-           <Card
-            word= {userData.username}
-            definition={userData.email}
-            example= {userData.password}
-          />
-        <div style={{ marginTop: '10px' }}> 
-            <Button sx={{ marginRight: '5px' }} variant="contained" startIcon={<SaveIcon />} onClick={salvarUsuario}>
-            </Button>
-            <Button sx={{ marginRight: '200px' }} variant="contained" startIcon={<RefreshIcon />} onClick={gerarUsuario}>
-            </Button>
-          </div>      
+      <header className="App-header">
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+            <div style={{ width: '100%', marginLeft: '300px' }}>
+              <UserTable userList={userList} page={page} rowsPerPage={rowsPerPage} onUpdateUserList={handleUpdateUserList} />
+              <TablePagination
+                rowsPerPageOptions={[5, 10, 25, 50]}
+                component="div"
+                count={userList.length}
+                rowsPerPage={rowsPerPage}
+                page={page}
+                onPageChange={handleChangePage}
+                onRowsPerPageChange={handleChangeRowsPerPage}
+                sx={{ color: 'white' }}
+              />
+            </div>
+            <div style={{ width: '50%', marginLeft: '50px', marginTop: '20px' }}>
+              <div style={{ marginBottom: '1x', textAlign: 'center', marginRight: '300px' }}>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                  <Button
+                    sx={{ marginRight: '5px' }}
+                    variant="contained"
+                    startIcon={<SaveIcon />}
+                    onClick={salvarUsuario}
+                    title="Salvar Usuário" 
+                  >
+                  </Button>
+                  <Button
+                    sx={{ marginRight: '200px' }}
+                    variant="contained"
+                    startIcon={<RefreshIcon />}
+                    onClick={gerarUsuario}
+                    title="Gerar Usuário" 
+                  >
+                  </Button>
+                </div>
+                <div style={{ marginBottom: '1x', textAlign: 'center', marginTop: '25px' }}>
+                  <Card
+                    word={userData?.username ?? ''}
+                    definition={userData?.email ?? ''}
+                    example={userData?.password ?? ''}
+                  />
+                  <img
+                    src={logo}
+                    style={{
+                      width: '80%',
+                      marginLeft: '10px',
+                      marginTop: '-80px',
+                      animationDuration: refreshing ? '1s' : '10s'
+                    }}
+                    className="App-logo"
+                    alt="logo"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-      )}
         </Box>
-        <UserTable userList={userList} page={page} rowsPerPage={rowsPerPage} onUpdateUserList={handleUpdateUserList}/>
-        <TablePagination
-        rowsPerPageOptions={[5, 10, 25, 50]}
-        component="div"
-        count={userList.length}
-        rowsPerPage={rowsPerPage}
-        page={page}
-        onPageChange={handleChangePage}
-        onRowsPerPageChange={handleChangeRowsPerPage}
-        sx={{ color: 'white' }}
-      />
       </header>
     </div>
   );
