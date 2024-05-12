@@ -43,8 +43,13 @@ Os dados são apresentados ao usuário e, ao clicar em salvar, são armazenados 
 Front-end básico em JavaScript: Feito. Utilizei JavaScript para elaborar a tela de geração, cadastro, edição e exclusão de usuários.
 
 
-![image](https://github.com/GuilhermeLimaaDoAmaral/Paschoalotto-Desafio/assets/84554855/546ee9cf-066a-470c-8929-0cdef711db4d)
+![image](https://github.com/GuilhermeLimaaDoAmaral/Paschoalotto-Desafio/assets/84554855/5d43ebfb-1317-45bc-a20d-88b0ebf7c61a)
 
-![image](https://github.com/GuilhermeLimaaDoAmaral/Paschoalotto-Desafio/assets/84554855/2d0130a5-5454-45cd-b5d7-90a8727ef81d)
+
+![image](https://github.com/GuilhermeLimaaDoAmaral/Paschoalotto-Desafio/assets/84554855/e48d70df-ae43-4672-a636-3d4acd2af4d2)
+
+![image](https://github.com/GuilhermeLimaaDoAmaral/Paschoalotto-Desafio/assets/84554855/b8ba8f4d-5ca1-44eb-9e48-f6e55313f51f)
+
+
 
 
